@@ -77,7 +77,7 @@ FastCall - 5
 			}
   
     //You could also enum the Native and Managed CallingConventions and CharSet here and calling them as you wish but for this example, this will do
-			MethodBuilder MB = TB.DefinePInvokeMethod(MethodName, WindowsLibrary, MethodAttributes.Public | MethodAttributes.Static | MethodAttributes.PinvokeImpl,
+			MethodBuilder MB = TB.DefinePInvokeMethod(MethodName, WinLib, MethodAttributes.Public | MethodAttributes.Static | MethodAttributes.PinvokeImpl,
 			                                          System.Reflection.CallingConventions.Standard ,
 			                                          ReturnType, ParameterTypes,
 			                                          CallingConvention.Winapi,
